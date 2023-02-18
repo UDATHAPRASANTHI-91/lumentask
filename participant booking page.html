@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Participant Event Booking Page</title>
+	<style>
+		label {
+			display: block;
+			margin-top: 10px;
+		}
+		input[type=text], select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+        input[type=submit]:hover {
+			background-color: #45a049;
+		}
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+	</style>
+	<script>
+		function bookEvent() {
+			alert("Event booked successfully!");
+		}
+	</script>
+</head>
+<body bgcolor="lightskyblue">
+	<h2>Participant Event Booking Page</h2>
+	<div class="container">
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Enter name">
+
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email" placeholder="Enter email">
+            <label for="phone">Phone:</label>
+			<input type="text" id="phone" name="phone" placeholder="Enter phone">
+
+			<label for="event">Event:</label>
+			<select id="event" name="event">
+				<option value="event1">Event 1</option>
+				<option value="event2">Event 2</option>
+				<option value="event3">Event 3</option>
+			</select>
+
+			<input type="submit" value="Book Now" onclick="bookEvent()">
+		</form>
+	</div>
+</body>
+</html>
